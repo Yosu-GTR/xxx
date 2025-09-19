@@ -1,0 +1,235 @@
+:root {
+    --color-principal: #0057b8;
+    --color-secundario: #f4f8fb;
+    --color-acento: #00b8a9;
+    --color-texto: #222;
+    --color-footer: #222;
+    --color-blanco: #fff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: var(--color-secundario);
+    color: var(--color-texto);
+    line-height: 1.6;
+}
+
+header {
+    background: var(--color-principal);
+    color: var(--color-blanco);
+    padding: 20px 0 10px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--color-blanco);
+}
+
+.logo h1 {
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    margin-top: 15px;
+}
+
+nav a {
+    color: var(--color-blanco);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: var(--color-acento);
+}
+
+.hero {
+    background: linear-gradient(90deg, #00ffdd 60%, #00b8a9 100%);
+    color: rgb(68, 0, 255);
+    text-align: center;
+    padding: 60px 20px 40px 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+.boton {
+    background: var(--color-acento);
+    color: var(--color-blanco);
+    padding: 12px 32px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.boton:hover {
+    background: #008e7e;
+}
+
+main {
+    max-width: 1100px;
+    margin: 40px auto 80px auto;
+    padding: 0 20px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+h2 {
+    color: var(--color-principal);
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.contenido-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+}
+
+.contenido-flex img {
+    width: 320px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.contenido-flex div {
+    flex: 1;
+    min-width: 250px;
+}
+
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+.servicio {
+    background: var(--color-blanco);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    padding: 25px 18px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.servicio:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.10);
+}
+
+.testimonios {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+blockquote {
+    background: #e3f2fd;
+    border-left: 5px solid var(--color-principal);
+    padding: 20px 25px;
+    border-radius: 8px;
+    font-style: italic;
+    max-width: 350px;
+    position: relative;
+}
+
+blockquote span {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+    color: var(--color-principal);
+    font-style: normal;
+}
+
+form {
+    background: var(--color-blanco);
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #b0bec5;
+    border-radius: 6px;
+    font-size: 1rem;
+    resize: vertical;
+}
+
+form button {
+    background: var(--color-principal);
+    color: var(--color-blanco);
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+form button:hover {
+    background: var(--color-acento);
+}
+
+footer {
+    background: var(--color-footer);
+    color: var(--color-blanco);
+    text-align: center;
+    padding: 18px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
